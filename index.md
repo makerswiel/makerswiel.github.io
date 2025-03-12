@@ -13,6 +13,8 @@ Kinderen en volwassenen:
 
 Jonge kinderen:
 * Makersplaats in de Bibliotheek
+
+Jongere en oudere kinderen
 * Tech playgrounds
 * De jonge onderzoekers Eindhoven
 
