@@ -1,44 +1,60 @@
-<header>
+# Makerswiel Eindhoven
 
-<!--
-  <<< Author notes: Course header >>>
-  Include a 1280×640 image, course title in sentence case, and a concise description in emphasis.
-  In your repository settings: enable template repository, add your 1280×640 social image, auto delete head branches.
-  Add your open source license, GitHub uses MIT license.
--->
+Makerswiel is een samenwerkingsverband van vrijwilligersgedreven tech-initiatieven in en om Eindhoven.
 
-# GitHub Pages
+## Over Makerswiel
 
-_Create a site or blog from your GitHub repositories with GitHub Pages._
 
-</header>
+Makerswiel is een samenwerkingsverband van vrijwilligersgedreven tech-initiatieven in en om Eindhoven.
+Makerswiel bestaat uit verschillende initatieven, die samen voor iedereen die iets met technologie wil doen in eindhoven kan bedienen! 
+Er zijn plekken voor kinderen en volwassenen, voor een enkel bezoek tot meerder dagen in de week open. Wil je meer weten? Kijk dan naar de paginas van de losse groepen!
 
-<!--
-  <<< Author notes: Finish >>>
-  Review what we learned, ask for feedback, provide next steps.
--->
+Ook zijn al deze initatieven vrijwilligersgedreven, en zijn nieuwe vrijwilligers welkom!
 
-## Finish
 
-_Congratulations friend, you've completed this course!_
+## Website
 
-<img src=https://octodex.github.com/images/constructocat2.jpg alt=celebrate width=300 align=right>
+Deze repository bevat de broncode voor de [Makerswiel website](https://makerswiel.github.io). De site is gebouwd met Jekyll en wordt gehost op GitHub Pages.
 
-Your blog is now live and has been deployed!
+### Lokaal ontwikkelen
 
-Here's a recap of all the tasks you've accomplished in your repository:
+Om de website lokaal te draaien:
 
-- You enabled GitHub Pages.
-- You selected a theme using the config file.
-- You learned about proper directory format and file naming conventions in Jekyll.
-- You created your first blog post with Jekyll!
+1. Clone deze repository
+   ```bash
+   git clone https://github.com/makerswiel/makerswiel.github.io.git
+   cd makerswiel.github.io
+   ```
 
-### What's next?
+2. Installeer Jekyll en bundler gems
+   ```bash
+   gem install jekyll bundler
+   bundle install
+   ```
 
-- Keep working on your GitHub Pages site... we love seeing what you come up with!
-- We'd love to hear what you thought of this course [in our discussion board](https://github.com/orgs/skills/discussions/categories/github-pages).
-- [Take another GitHub Skills course](https://github.com/skills).
-- [Read the GitHub Getting Started docs](https://docs.github.com/en/get-started).
-- To find projects to contribute to, check out [GitHub Explore](https://github.com/explore).
+3. Run de development server
+   ```bash
+   bundle exec jekyll serve
+   ```
 
-<footer>
+4. Open `http://localhost:4000` in je browser
+
+Je kunt nu wijzigingen maken aan de site en deze direct zien in je browser. De server ververst automatisch wanneer je bestanden opslaat.
+
+#### Nieuw sidebar item maken
+
+1. Maak een nieuw bestand aan in de `_posts` map
+2. Gebruik de bestandsnaam: `YYYY-MM-DD-titel.md`
+3. Begin het bestand met front matter:
+   ```
+   ---
+   layout: post
+   title: "Titel van je post"
+   date: YYYY-MM-DD
+   ---
+   ```
+4. Schrijf je content in Markdown onder de front matter
+
+## Licentie
+
+CC-BY
