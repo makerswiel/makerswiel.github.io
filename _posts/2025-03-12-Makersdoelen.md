@@ -1,5 +1,6 @@
 ---
 title: "Makersgereedschappen"
+layout: post
 date: 2025-03-12
 ---
 
