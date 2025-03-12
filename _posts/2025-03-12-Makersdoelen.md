@@ -1,6 +1,6 @@
 ---
-title: "Makersgereedschappen"
 layout: post
+title: "Makersgereedschappen"
 date: 2025-03-12
 ---
 
