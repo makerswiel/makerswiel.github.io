@@ -10,12 +10,28 @@
     vrijwilligers zijn welkom!
     <br />
     <br />
+    Hieronder staan links naar verschillende artikelen waarin wij verschillende
+    onderwerpen rondom het makerswiel, en de aansluitende cultuur beschrijven
+    <br />
+    <br />
+    <div class="section">
+      <div class="separator">Blog</div>
+      <hr />
+      <div class="items">
+        {% for post in site.posts limit:5 %}
+        <a href="{{ post.url | relative_url }}" class="item"
+          >{{ post.title }}</a
+        >
+        {% endfor %}
+      </div>
+    </div>
+    <br />
+    <br />
     Hieronder zijn links te vinden naar de deelnemers van het Makerswiel,
     verdeeld over de leeftijds categorie waar activiteiten voor zijn bij de
     desbetreffende deelnemer
     <br />
     <br />
-
     <div class="sections">
       <div class="section">
         <div class="separator">Alle leeftijden</div>
@@ -67,23 +83,6 @@
             >MAD emergent art center</a
           >
         </div>
-      </div>
-    </div>
-    <br />
-    <br />
-    Hieronder staan links naar verschillende artikelen waarin wij verschillende
-    onderwerpen rondom het makerswiel, en de aansluitende cultuur beschrijven
-    <br />
-    <br />
-    <div class="section">
-      <div class="separator">Blog</div>
-      <hr />
-      <div class="items">
-        {% for post in site.posts limit:5 %}
-        <a href="{{ post.url | relative_url }}" class="item"
-          >{{ post.title }}</a
-        >
-        {% endfor %}
       </div>
     </div>
   </div>
