@@ -1,0 +1,28 @@
+.main {
+  font-size: 1.25em;
+  padding: 40px;
+  font-family: "Raleway";
+}
+
+.seperator {
+  width: 100%;
+  font-family: "Playwrite";
+  font-size: 1.5em;
+
+  color: #3077c5;
+
+  hr {
+    margin-top: 4px;
+    opacity: 0.8;
+    border: none;
+    border-bottom: 3px solid #3077c5;
+  }
+}
+
+.section {
+  margin-bottom: 30px;
+
+  &:first-of-type {
+    margin-top: 30px;
+  }
+}

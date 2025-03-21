@@ -34,7 +34,7 @@ Om de website lokaal te draaien:
 
 3. Run de development server
    ```bash
-   bundle exec jekyll serve
+   bundle exec jekyll serve -l
    ```
 
 4. Open `http://localhost:4000` in je browser
