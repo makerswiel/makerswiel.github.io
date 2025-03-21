@@ -1,0 +1,29 @@
+.blogTitle {
+  box-sizing: border-box;
+  width: 100%;
+  font-family: "Playwrite";
+  font-size: 1.5em;
+  font-weight: 300;
+  color: #3077c5;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  line-height: 1.5em;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media only screen and (max-width: 700px) {
+    font-size: 1.25em;
+    flex-direction: column;
+    align-items: start;
+  }
+  overflow: hidden;
+  word-break: break-all;
+}
+
+.date {
+  font-family: "Raleway";
+  color: gray;
+  font-size: 0.75em;
+}
