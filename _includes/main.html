@@ -69,5 +69,22 @@
         </div>
       </div>
     </div>
+    <br />
+    <br />
+    Hieronder staan links naar verschillende artikelen waarin wij verschillende
+    onderwerpen rondom het makerswiel, en de aansluitende cultuur beschrijven
+    <br />
+    <br />
+    <div class="section">
+      <div class="separator">Blog</div>
+      <hr />
+      <div class="items">
+        {% for post in site.posts limit:5 %}
+        <a href="{{ post.url | relative_url }}" target="_blank" class="item"
+          >{{ post.title }}</a
+        >
+        {% endfor %}
+      </div>
+    </div>
   </div>
 </div>
