@@ -277,6 +277,7 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
+  jekyll-sass-converter
   jekyll-seo-tag
 
 BUNDLED WITH

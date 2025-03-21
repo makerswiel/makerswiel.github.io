@@ -1,0 +1,89 @@
+<div class="content">
+  <div class="main">
+    Makerswiel bestaat uit verschillende initatieven, die samen voor iedereen
+    die iets met technologie wil doen in eindhoven kan dienen! Er zijn plekken
+    voor kinderen en volwassenen, voor een enkel bezoek tot meerder dagen in de
+    week open. Wil je meer weten? Kijk dan naar de paginas van de losse groepen!
+    <br />
+    <br />
+    Alle initatieven van het Makerswiel zijn vrijwilligersgedreven, nieuwe
+    vrijwilligers zijn welkom!
+    <br />
+    <br />
+    Hieronder staan links naar verschillende artikelen waarin wij verschillende
+    onderwerpen rondom het makerswiel, en de aansluitende cultuur beschrijven
+    <br />
+    <br />
+    <div class="section">
+      <div class="separator">Blog</div>
+      <hr />
+      <div class="items">
+        {% for post in site.posts limit:5 %}
+        <a href="{{ post.url | relative_url }}" class="item"
+          >{{ post.title }}</a
+        >
+        {% endfor %}
+      </div>
+    </div>
+    <br />
+    <br />
+    Hieronder zijn links te vinden naar de deelnemers van het Makerswiel,
+    verdeeld over de leeftijds categorie waar activiteiten voor zijn bij de
+    desbetreffende deelnemer
+    <br />
+    <br />
+    <div class="sections">
+      <div class="section">
+        <div class="separator">Alle leeftijden</div>
+        <hr />
+        <div class="items">
+          <a
+            href="https://philips.nl/a-w/philips-museum/bezoekersinformatie/praktische-informatie.html"
+            target="_blank"
+            class="item"
+            >Philips museum</a
+          >
+        </div>
+      </div>
+      <div class="section">
+        <div class="separator">Jonge kinderen</div>
+        <hr />
+        <div class="items">
+          <a
+            href="https://www.bibliotheekeindhoven.nl/makersplaats.html"
+            target="_blank"
+            class="item"
+            >Makersplaats in de Bibliotheek</a
+          >
+        </div>
+      </div>
+      <div class="section">
+        <div class="separator">Jongere en oudere kinderen</div>
+        <hr />
+        <div class="items">
+          <a
+            href="https://dynamojeugdwerk.nl/crew/tech-playgrounds/"
+            target="_blank"
+            class="item"
+            >Tech playgrounds</a
+          >
+          <a class="item" href="https://djoe.nl/" target="_blank"
+            >De jonge onderzoekers Eindhoven</a
+          >
+        </div>
+      </div>
+      <div class="section">
+        <div class="separator">Volwassenen</div>
+        <hr />
+        <div class="items">
+          <a class="item" href="https://hackalot.nl/" target="_blank"
+            >Hackalot, de hackerspace van Eindhoven</a
+          >
+          <a class="item" href="https://madlab.nl/?lang=en" target="_blank"
+            >MAD emergent art center</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

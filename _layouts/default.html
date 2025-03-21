@@ -1,86 +1,21 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: 'en-US' }}">
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}" media="screen" type="text/css">
-    <link rel="stylesheet" href="{{ '/assets/css/print.css' | relative_url }}" media="print" type="text/css">
-    <style>
-      /* Custom sidebar styles */
-      .sidebar {
-        float: right;
-        width: 200px;
-        margin-left: 20px;
-        padding: 10px;
-        background: hsl(0, 0%, 69%);
-        border-radius: 4px;
-      }
-      .sidebar h3 {
-        margin-top: 0;
-      }
-      .sidebar ul {
-        list-style: none;
-        padding: 0;
-      }
-      .sidebar li {
-        margin-bottom: 10px;
-      }
-      .sidebar .post-date {
-        font-size: 0.8em;
-        color: #666;
-      }
-      .header_image {
-        display:flex;
-        width: 100%;
-      }
-      .header_image .svg-container {
-        margin-top: -75px;
-      }
-      .inner a h1 {
-        white-space: pre;
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ '/assets/css/main.css?v=' | append: site.github.build_revision | relative_url }}"
+    />
 
-      }
-      body {
-        overflow-x: hidden;
-      }
-    </style>
     {% seo %}
   </head>
 
   <body>
-    <header>
-      <div class="inner">
-        <a href="{{ '/' | relative_url }}">
-          <h1>Makerswiel&#13;&#10;Eindhoven</h1>
-        </a>
-        <h2 class="header_image">{{ site.description | default: site.github.project_tagline }}  {% include wiel.html %}</h2>
-        
-      </div>
-    </header>
-
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-        <section id="main-content">
-          {{ content }}
-        </section>
-
-        <aside class="sidebar">
-          <h3>Details</h3>
-          <ul>
-            {% for post in site.posts limit:5 %}
-              <li>
-                <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-              </li>
-            {% endfor %}
-          </ul>
-        </aside>
-      </div>
-    </div>
-
-
-
-   
-
+    {% include header.html %} {{ content }}
   </body>
 </html>
