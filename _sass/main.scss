@@ -4,25 +4,55 @@
   font-family: "Raleway";
 }
 
+.section {
+  margin-bottom: 30px;
+
+  &:first-of-type {
+    margin-top: 30px;
+  }
+}
+
 .seperator {
   width: 100%;
   font-family: "Playwrite";
   font-size: 1.5em;
-
+  font-weight: 300;
   color: #3077c5;
 
   hr {
     margin-top: 4px;
     opacity: 0.8;
     border: none;
-    border-bottom: 3px solid #3077c5;
+    border-bottom: 2px solid #3077c5;
   }
 }
 
-.section {
-  margin-bottom: 30px;
+.items {
+  display: flex;
+  gap: 20px;
 
-  &:first-of-type {
-    margin-top: 30px;
+  align-items: center;
+  justify-content: start;
+}
+
+.item {
+  border: 3px solid #3077c5;
+  border-radius: 10px;
+  padding: 10px;
+  width: fit-content;
+  transition: 100ms;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: "Raleway";
+  font-weight: 500;
+  color: black;
+
+  &:visited {
+    color: black;
+  }
+
+  &:hover {
+    background-color: #3077c5;
+    color: white;
   }
 }
