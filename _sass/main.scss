@@ -12,6 +12,7 @@
 
   border: 2px solid #3077c5;
   border-radius: 10px;
+  max-width: 100%;
 
   hr {
     margin-left: 0px;
@@ -49,6 +50,7 @@
 
   align-items: center;
   justify-content: start;
+  flex-wrap: wrap;
 }
 
 .item {
@@ -63,6 +65,8 @@
   font-weight: 500;
   color: black;
   align-self: stretch;
+  text-align: center;
+  flex-grow: 1;
 
   display: flex;
   justify-content: center;
